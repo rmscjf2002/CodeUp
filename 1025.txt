@@ -1,0 +1,55 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+#include <functional>
+#include <algorithm>
+#include <vector>
+#include <cstdio>
+#include <cassert>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <cmath>
+#include <stack>
+#include <queue>
+#include <ctime>
+#include <deque>
+#include <set>
+#include <list>
+#include <map>
+#include <tuple>
+#include <sstream>
+
+using namespace std;
+
+
+
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+	
+	string s;
+	cin >> s;
+	
+	int len = s.length();
+	int cnt = len;
+	for (int i = 0; i < len; i++)
+	{
+		cnt--;
+		string tmp;
+		tmp += s[i];
+		
+		for(int j=0; j<cnt; j++)
+			tmp += '0';
+
+		cout << '[' << tmp << ']' << '\n';
+	}
+	
+
+	
+	return 0;
+}
+	
