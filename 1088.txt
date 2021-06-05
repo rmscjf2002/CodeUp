@@ -1,0 +1,48 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+#include <functional>
+#include <algorithm>
+#include <vector>
+#include <cstdio>
+#include <cassert>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <cmath>
+#include <stack>
+#include <queue>
+#include <ctime>
+#include <deque>
+#include <set>
+#include <list>
+#include <map>
+#include <tuple>
+#include <sstream>
+
+using namespace std;
+
+/* 3의 배수는 통과? */
+
+
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n; i++)
+	{
+		if (i % 3 == 0)
+			continue;
+		cout << i << ' ';
+	}
+	cout << '\n';
+	
+	
+	return 0;
+}
