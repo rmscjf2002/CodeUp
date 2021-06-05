@@ -1,0 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+#include <functional>
+#include <algorithm>
+#include <vector>
+#include <cstdio>
+#include <cassert>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <cmath>
+#include <stack>
+#include <queue>
+#include <ctime>
+#include <deque>
+#include <set>
+#include <list>
+#include <map>
+#include <tuple>
+#include <sstream>
+
+using namespace std;
+
+/* 빛 섞어 색 만들기 */
+
+
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	int a, b, c;
+	cin >> a >> b >> c;
+
+	int cnt = 0;
+
+	for (int i = 0; i < a; i++)
+	{
+		for (int j = 0; j < b; j++)
+		{
+			for (int k = 0; k < c; k++)
+			{
+				cnt++;
+				cout << i << ' ' << j << ' ' << k << '\n';
+			}
+		}
+	}
+	cout << cnt << '\n';
+	
+	return 0;
+}
