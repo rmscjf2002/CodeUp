@@ -1,0 +1,47 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+#include <functional>
+#include <algorithm>
+#include <vector>
+#include <cstdio>
+#include <cassert>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <cmath>
+#include <stack>
+#include <queue>
+#include <ctime>
+#include <deque>
+#include <set>
+#include <list>
+#include <map>
+#include <tuple>
+#include <sstream>
+
+using namespace std;
+
+/* 주사위를 2개 던지면? */
+
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	int a, b;
+	cin >> a >> b;
+	
+	for (int i = 1; i <= a; i++)
+	{
+		for (int j = 1; j <= b; j++)
+		{
+			cout << i << ' ' << j << '\n';
+		}
+	
+	}
+	
+	return 0;
+}
