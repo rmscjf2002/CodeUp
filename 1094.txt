@@ -1,0 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+#include <functional>
+#include <algorithm>
+#include <vector>
+#include <cstdio>
+#include <cassert>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <cmath>
+#include <stack>
+#include <queue>
+#include <ctime>
+#include <deque>
+#include <set>
+#include <list>
+#include <map>
+#include <tuple>
+#include <sstream>
+
+using namespace std;
+
+/* 이상한 출석 번호 부르기 2 */
+
+
+
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	
+	
+	int n;
+	cin >> n;
+	vector<int> v(n);
+	for (int i = 0; i < n; i++)
+	{
+		int a;
+		cin >> a;
+		v[i] = a;
+	}
+
+	for (int i = n-1; i >= 0; i--)
+		cout << v[i] << ' ';
+	cout << '\n';
+	
+	
+	return 0;
+}
